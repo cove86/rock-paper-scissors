@@ -32,48 +32,49 @@ h3 {
   font-size: 6.8rem;
 }
 
-button {
+.btn {
   appearance: none;
   background-color: transparent;
   border: 2px solid #1a1a1a;
   border-radius: 1.5rem;
   box-sizing: border-box;
-  color: #3b3b3b;
+  /* color: #3b3b3b; */
   cursor: pointer;
   display: block;
   font-family: inherit;
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 3.2rem;
+  /* font-weight: bold; */
   grid-column: 2;
   line-height: normal;
   justify-self: center;
-  margin: 10px 10px;
-  min-height: 60px;
-  min-width: 0;
+  align-self: center;
+  /* margin: 2rem 2rem; */
+  /* min-height: 60px; */
+  /* min-width: 0; */
   outline: none;
-  padding: 1.6rem 2.4rem;
+  padding: 2.4rem 4.8rem 2.4rem 4.8rem;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 50%;
+  width: 75%;
   will-change: transform;
 }
 
-button:disabled {
+.btn:disabled {
   pointer-events: none;
 }
 
-button:hover {
+.btn:hover {
   color: #fff;
   background-color: #1a1a1a;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-button:active {
+.btn:active {
   box-shadow: none;
   transform: translateY(0);
 }
@@ -96,7 +97,7 @@ button:active {
   justify-self: center;
   width: 60%;
   padding: 2rem;
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 .player-1 {
@@ -105,7 +106,13 @@ button:active {
   justify-self: center;
   width: 60%;
   padding: 2rem;
-  border: 5px solid black;
+  border: 2px solid black;
+}
+
+.player-img {
+  /* max-width: 60%; */
+  min-width: 60%;
+  min-height: 60%;
 }
 
 .gr1 {
@@ -117,6 +124,7 @@ button:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: [first] 9.5rem [line2] 9.5rem [line3] 9.5rem [line4] 9.5rem [end];
+  row-gap: 2rem;
 }
 
 .score-0,
@@ -124,10 +132,8 @@ button:active {
   font-size: 7.4rem;
 }
 
-.player-name {
-  font-size: 5.2rem;
-}
-
+.player-name--1,
+.player-name--2,
 .result {
   font-size: 5.2rem;
 }
@@ -138,4 +144,60 @@ button:active {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 84em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 65em) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 50em) {
+  h1 {
+    font-size: 4.8rem;
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+    padding: 2.5rem;
+  }
+
+  .score-0,
+  .score-1 {
+    font-size: 3.7rem;
+  }
+
+  .player-name--1,
+  .player-name--2,
+  .result {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .gr2 {
+    grid-template-rows: [first] 9.5rem [line2] 9.5rem [line3] 9.5rem [end];
+    row-gap: 0;
+  }
+
+  .Rock {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .Paper {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .Scissors {
+    grid-column: 3;
+    grid-row: 3;
+  }
 }

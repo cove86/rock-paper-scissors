@@ -1,2 +1,2 @@
 # rock-paper-scissors
-I created this using HTML, CSS & Javascript, it's basic but it works! Just need to add some styling and then make it responsive.
+I created this using HTML, CSS & Javascript, this is completely my own desgin.code, it's basic but it works!

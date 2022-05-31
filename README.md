@@ -5,4 +5,4 @@ I created this using HTML, CSS & Javascript, this is completely my own desgin & 
 <img src="Screenshot 2022-02-16.png">
 
 ##Link to Live site
-https://app.netlify.com/sites/ash-rock-paper-scissors/overview
+https://ash-rock-paper-scissors.netlify.app/
